@@ -1,0 +1,7 @@
+<p>product-edit works!</p>
+
+<form (ngSubmit)="updateProduct()">
+  <label><small>Product Title:</small></label><br>
+  <input type="text" [(ngModel)]="product.title" name="title" required>
+  <button type="submit">Update</button>
+</form>

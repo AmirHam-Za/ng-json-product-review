@@ -1,0 +1,116 @@
+{
+  "products": [
+    {
+      "id": "65e886ee7738b647c8f69b7e",
+      "title": "Iphone",
+      "brand": "Apple",
+      "priceInPaisa": "5500000",
+      "discountPercentage": 10,
+      "category_id": "65e888c4c7b18ec0788b2b06",
+      "category": "smartphones"
+    },
+    {
+      "id": "65e886ee7738b647c8f69b7",
+      "title": "Galaxy S edge",
+      "brand": "Samsung",
+      "priceInPaisa": 8200000.07,
+      "discountPercentage": 14.41,
+      "category_id": "65e888c4c7b18ec0788b2b06",
+      "category": "smartphones"
+    },
+    {
+      "id": "65e886eebc9904cbc8343848",
+      "title": "Lenevo Laptop",
+      "brand": "Lenevo",
+      "priceInPaisa": 212.15,
+      "discountPercentage": 77.88,
+      "category_id": "65e888c4f4d436ddd8798cdd",
+      "category": "laptops"
+    },
+    {
+      "id": "65e886eebc9904cbc834384",
+      "title": "Dell Laptop",
+      "brand": "Dell",
+      "priceInPaisa": 2550000.15,
+      "discountPercentage": 17.88,
+      "category_id": "65e888c4f4d436ddd8798cdd",
+      "category": "laptops"
+    },
+    {
+      "id": "65e886ee0a0d78ccc8bd0c6a",
+      "title": "Flour",
+      "brand": "ACI",
+      "priceInPaisa": 9808.49,
+      "discountPercentage": 13.56,
+      "category_id": "65e888c4657e0598e3f824a2",
+      "category": "groceries"
+    },
+    {
+      "id": "65e886ee0a0d78ccc8bd0c6",
+      "title": "Juice",
+      "brand": "Acme",
+      "priceInPaisa": 108.49,
+      "discountPercentage": 16.81,
+      "category_id": "65e888c4657e0598e3f824a2",
+      "category": "groceries"
+    },
+    {
+      "id": "65e886ee57d67ae243f1476b",
+      "title": "almirah",
+      "brand": "Otobi",
+      "priceInPaisa": 4652354.71,
+      "discountPercentage": 20.9,
+      "category_id": "65e888c4b890e9de96ff6a0f",
+      "category": "furniture"
+    },
+    {
+      "id": "65e886ee57d67ae243f1476",
+      "title": "Waredrobe",
+      "brand": "Akhter",
+      "priceInPaisa": 5265867.71,
+      "discountPercentage": 15.9,
+      "category_id": "65e888c4b890e9de96ff6a0f",
+      "category": "furniture"
+    },
+    {
+      "id": "65e886eec33f8d052c9218bd",
+      "title": "sunglass",
+      "brand": "RayBan",
+      "priceInPaisa": 352548.8,
+      "discountPercentage": 13.56,
+      "category_id": "65e888c43391631581380c57",
+      "category": "sunglasses"
+    },
+    {
+      "id": "65e886eec33f8d052c9218b",
+      "title": "power glass",
+      "brand": "Gucci",
+      "priceInPaisa": 745871.8,
+      "discountPercentage": 8.14,
+      "category_id": "65e888c43391631581380c57",
+      "category": "sunglasses"
+    }
+  ],
+  "categories": [
+    {
+      "id": "65e888c4c7b18ec0788b2b06",
+      "categoryName": "smartphones"
+    },
+    {
+      "id": "65e888c4f4d436ddd8798cdd",
+      "categoryName": "laptops"
+    },
+    {
+      "id": "65e888c4657e0598e3f824a2",
+      "categoryName": "groceries"
+    },
+    {
+      "id": "65e888c4b890e9de96ff6a0f",
+      "categoryName": "furniture"
+    },
+    {
+      "id": "65e888c43391631581380c57",
+      "categoryName": "sunglasses"
+    }
+  ]
+}

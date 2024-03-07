@@ -1,0 +1,8 @@
+
+
+<div  *ngFor="let item of products">
+  <p>Title: {{item.title}}</p>
+  <a  routerLink="/products/{{item.id}}">Details</a>
+  <button (click)="deleteProductById(item.id)"> x</button>
+  <button (click)="editProductById(item.id)"> edit</button>
+</div>
