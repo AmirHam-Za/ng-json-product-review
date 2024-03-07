@@ -22,6 +22,7 @@ export class ProductDetailsComponent implements OnInit {
  currentPrice:number= 0
  previousPriceInTaka:number= 0
  currentPriceInTaka:number= 0
+ currentPriceInTakas:number= 0
 
   constructor(
     private route: ActivatedRoute,

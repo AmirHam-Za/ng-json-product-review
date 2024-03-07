@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './components/products/product-details/p
 import { ProductEditComponent } from './components/products/product-edit/product-edit.component';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/products/product-list/product-list.component';
+import { PercentagePipe } from '@percentage.pipe';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,14 @@ import { ProductListComponent } from './components/products/product-list/product
     CustomersComponent,
     ProductDetailsComponent,
     ProductEditComponent,
-    ProductListComponent
+    ProductListComponent,
+    PercentagePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
