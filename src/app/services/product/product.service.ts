@@ -24,6 +24,7 @@ export class ProductService {
   deleteProductByIdAsync(id: string): Observable<Product> {
     return this._http.delete<Product>(`${API_ENDPOINT}/products/${id}`)
   }
+  
   updateProductAsync(product: Product): Observable<Product> {
     return this._http.put<Product>(`${API_ENDPOINT}/products/${product.id}`, product);
   }
