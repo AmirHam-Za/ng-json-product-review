@@ -18,11 +18,11 @@ Make sure you have the following installed on your system:
 
 1. *Clone the repository:*
 
-   git clone https://github.com/AmirHam-Za/ng-json-product-review.git
+   git clone https://github.com/AmirHam-Za/ng-product-review.git
    
 2. *Navigate to the project directory:*
 
-   `cd ng-json-product-review`
+   `cd ng-product-review`
 
 3. *Install dependencies:*
 
@@ -32,7 +32,7 @@ Make sure you have the following installed on your system:
 
    To run the application locally, use the following command:
 
-   `ng serve`
+   `npm run start`
 
 5. *Running in the Browser:*
 
