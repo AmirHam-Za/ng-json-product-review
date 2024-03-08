@@ -19,7 +19,6 @@ export class ProductDetailsComponent implements OnInit {
     category: '',
   }
 
-//  currentPrice:number= 0
  previousPriceInTaka:number= 0
  currentPriceInTaka:number= 0
 
