@@ -29,11 +29,6 @@ export class ProductService {
     return this._http.put<Product>(`${API_ENDPOINT}/products/${product.id}`, product);
   }
 
-  calculateCurrentPrice(price: number, discountPercentage: number) {
-    const currentPrice = price - (price * (discountPercentage / 100));
-    return currentPrice
-  }
-
   convertPriceInTaka(priceInPaisa: number): number {
     const priceInTaka = priceInPaisa / 100;
     const roundedPrice = +priceInTaka.toFixed(2);

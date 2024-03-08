@@ -1,9 +1,8 @@
 <p>product-details works!</p>
 
-
 <p>Title: {{products.title}}</p>
 <p>Brand: {{products.brand}}</p>
 <p>Category: {{ products.category }}</p>
-<p>Previous Price: {{ (products.priceInPaisa/100) | currency }} </p>
+<p>Previous Price: {{ (previousPriceInTaka) | currency }} </p>
 <p>Discount(%): {{ products.discountPercentage }}</p>
-<p>Current Price: {{ products.discountPercentage  | percentage : products.priceInPaisa/100 : 2 | currency }} </p>
+<p>Current Price: {{ products.discountPercentage  | currentPrice : previousPriceInTaka : 2 | currency }} </p>

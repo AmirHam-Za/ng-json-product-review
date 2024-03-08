@@ -19,10 +19,9 @@ export class ProductDetailsComponent implements OnInit {
     category: '',
   }
 
- currentPrice:number= 0
+//  currentPrice:number= 0
  previousPriceInTaka:number= 0
  currentPriceInTaka:number= 0
- currentPriceInTakas:number= 0
 
   constructor(
     private route: ActivatedRoute,
@@ -35,8 +34,7 @@ export class ProductDetailsComponent implements OnInit {
    this._productService.getProductByIdAsync(productIdFromRoute).subscribe((res:Product) => {
     this.products = res
     
-    this.currentPrice = this._productService.calculateCurrentPrice(this.products.priceInPaisa, this.products.discountPercentage)
-    this.currentPriceInTaka = this._productService.convertPriceInTaka(this.currentPrice)
+    this.previousPriceInTaka = this._productService.convertPriceInTaka(this.products.priceInPaisa)
 
   })
 }

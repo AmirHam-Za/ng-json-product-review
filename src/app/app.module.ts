@@ -10,7 +10,7 @@ import { ProductDetailsComponent } from './components/products/product-details/p
 import { ProductEditComponent } from './components/products/product-edit/product-edit.component';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/products/product-list/product-list.component';
-import { PercentagePipe } from '@percentage.pipe';
+import { CurrentPricePipe } from '@pipes/currentPrice.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { PercentagePipe } from '@percentage.pipe';
     ProductDetailsComponent,
     ProductEditComponent,
     ProductListComponent,
-    PercentagePipe
+    CurrentPricePipe
   ],
   imports: [
     BrowserModule,
