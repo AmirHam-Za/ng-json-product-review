@@ -5,4 +5,4 @@
 <p>Category: {{ products.category }}</p>
 <p>Previous Price: {{ (previousPriceInTaka) | currency }} </p>
 <p>Discount(%): {{ products.discountPercentage }}</p>
-<p>Current Price: {{ products.discountPercentage  | currentPrice : previousPriceInTaka : 2 | currency }} </p>
+<p>Current Price: {{ (products.discountPercentage ? (products.discountPercentage | currentPrice : previousPriceInTaka : 2) : previousPriceInTaka) | currency }} </p>

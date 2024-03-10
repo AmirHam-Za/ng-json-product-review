@@ -6,27 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
-import { ProductEditComponent } from './components/products/product-edit/product-edit.component';
-import { FormsModule } from '@angular/forms';
-import { ProductListComponent } from './components/products/product-list/product-list.component';
-import { CurrentPricePipe } from '@pipes/currentPrice.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CustomersComponent,
-    ProductDetailsComponent,
-    ProductEditComponent,
-    ProductListComponent,
-    CurrentPricePipe
+    CustomersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

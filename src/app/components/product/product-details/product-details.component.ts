@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '@interfaces/interfaces';
 import { ProductService } from '@services/product/product.service';
@@ -8,7 +8,7 @@ import { ProductService } from '@services/product/product.service';
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductDetailsComponent {
   products: Product={
     id: '',
     title: '',
@@ -32,10 +32,10 @@ export class ProductDetailsComponent implements OnInit {
 
    this._productService.getProductByIdAsync(productIdFromRoute).subscribe((res:Product) => {
     this.products = res
+    console.log(res)
     
     this.previousPriceInTaka = this._productService.convertPriceInTaka(this.products.priceInPaisa)
 
   })
 }
-
 }

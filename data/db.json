@@ -5,7 +5,7 @@
       "title": "Iphone",
       "brand": "Apple",
       "priceInPaisa": "5500000",
-      "discountPercentage": 10,
+      "discountPercentage":10,
       "category_id": "65e888c4c7b18ec0788b2b06",
       "category": "smartphones"
     },
@@ -13,7 +13,7 @@
       "id": "65e886ee7738b647c8f69b7",
       "title": "Galaxy S Edge",
       "brand": "Samsung",
-      "priceInPaisa": 8200000.07,
+      "priceInPaisa": 8100000.07,
       "discountPercentage": 14.41,
       "category_id": "65e888c4c7b18ec0788b2b06",
       "category": "smartphones"
@@ -22,8 +22,8 @@
       "id": "65e886eebc9904cbc8343848",
       "title": "Lenevo Laptop",
       "brand": "Lenevo",
-      "priceInPaisa": 212.15,
-      "discountPercentage": 77.88,
+      "priceInPaisa": 1240000.15,
+      "discountPercentage": 17.88,
       "category_id": "65e888c4f4d436ddd8798cdd",
       "category": "laptops"
     },
@@ -32,7 +32,7 @@
       "title": "Dell Laptop",
       "brand": "Dell",
       "priceInPaisa": 2550000.15,
-      "discountPercentage": 17.88,
+      "discountPercentage": 13.33,
       "category_id": "65e888c4f4d436ddd8798cdd",
       "category": "laptops"
     },

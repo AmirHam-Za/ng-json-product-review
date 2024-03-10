@@ -8,7 +8,6 @@ import { ProductService } from '@services/product/product.service';
   styleUrl: './product-edit.component.css'
 })
 export class ProductEditComponent {
-
   product: any = []
   constructor(
     private _route: ActivatedRoute,
@@ -34,5 +33,4 @@ export class ProductEditComponent {
     }
     );
   }
-
 }

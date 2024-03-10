@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Product } from '@interfaces/interfaces';
 import { ProductService } from '@services/product/product.service';
 
@@ -37,5 +37,4 @@ export class ProductListComponent {
   editProductById(userId: string): void {
     this._router.navigate(['/products', userId, 'edit']);
   }
-   
 }
