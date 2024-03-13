@@ -9,33 +9,32 @@ import { ProductService } from '@services/product/product.service';
   styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent {
-  products: Product={
+  products: Product = {
     id: '',
     title: '',
     brand: '',
-    priceInPaisa:0 ,
+    priceInPaisa: 0,
     discountPercentage: 0,
     category_id: '',
     category: '',
   }
 
- previousPriceInTaka:number= 0
- currentPriceInTaka:number= 0
+  previousPriceInTaka: number = 0
+  currentPriceInTaka: number = 0
 
   constructor(
     private route: ActivatedRoute,
     private _productService: ProductService,
-    ){}
+  ) { }
 
   ngOnInit(): void {
-   const productIdFromRoute = String(this.route.snapshot.paramMap.get('id'))  
+    const productIdFromRoute = String(this.route.snapshot.paramMap.get('id'))
 
-   this._productService.getProductByIdAsync(productIdFromRoute).subscribe((res:Product) => {
-    this.products = res
-    console.log(res)
-    
-    this.previousPriceInTaka = this._productService.convertPriceInTaka(this.products.priceInPaisa)
+    this._productService.getProductByIdAsync(productIdFromRoute).subscribe((res: Product) => {
+      this.products = res
+      console.log(res)
 
-  })
-}
+      this.previousPriceInTaka = this._productService.convertPriceInTaka(this.products.priceInPaisa)
+    })
+  }
 }

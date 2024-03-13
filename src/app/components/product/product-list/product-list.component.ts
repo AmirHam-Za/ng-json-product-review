@@ -20,7 +20,6 @@ export class ProductListComponent {
   ngOnInit(): void {
     this.getProducts()
   }
-
   getProducts() {
     this._productService.getAllProductsAsync().subscribe(
       {

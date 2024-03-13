@@ -9,7 +9,6 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { CurrentPricePipe } from '@pipes/currentPrice.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     ProductListComponent,
@@ -23,6 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RouterModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
+
+
 })
 export class ProductModule { }
