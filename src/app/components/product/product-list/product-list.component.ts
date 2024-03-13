@@ -22,16 +22,33 @@ export class ProductListComponent {
   }
 
   getProducts() {
-    this._productService.getAllProductsAsync().subscribe((res: Product[]) => {
-      this.products = res
-      console.log(res)
-    })
+    this._productService.getAllProductsAsync().subscribe(
+      {
+        next: (res: Product[]) => {
+          console.log(res)
+          this.products = res
+        },
+        error: (err: any) => {
+          if (err.status == 404) {
+            console.log(`Error occured: ${err.statusText}-${err.status}`)
+          }
+        }
+      },
+    )
   }
 
   deleteProductById(id: string) {
-    this._productService.deleteProductByIdAsync(id).subscribe(() => {
-      this.getProducts()
-    })
+    this._productService.deleteProductByIdAsync(id).subscribe(
+      {
+        next: () => { },
+
+        error: (err: any) => {
+          console.log(err)
+          if (err.status == 404) {
+            alert(`Error occured: ${err.statusText}-${err.status}`)
+          }
+        }
+      },)
   }
 
   editProductById(userId: string): void {
