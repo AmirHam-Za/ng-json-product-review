@@ -1,6 +1,14 @@
 <p>product-edit works!</p>
-<form (ngSubmit)="updateProduct()">
+
+<form  [formGroup]="updateForm" (ngSubmit)="updateProduct()">
+
   <label><small>Product Title:</small></label><br>
-  <input type="text" [(ngModel)]="product.title" name="title" required>
-  <button type="submit">Update</button>
+  <input type="text" formControlName="title" [value]="product.title">
+  
+  <button [disabled]="updateForm.invalid" type="submit">Update</button>
+
+  <div *ngIf="title && title.errors?.['required']">Title is required</div>
+  <div *ngIf="title && title.invalid && title.errors?.['maxlength']">maxlength is 10</div>
+  <div *ngIf="title && title.invalid && title.errors?.['minlength']">minlength is 3</div><br>
+
 </form>

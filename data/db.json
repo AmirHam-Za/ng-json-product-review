@@ -5,7 +5,7 @@
       "title": "Iphone",
       "brand": "Apple",
       "priceInPaisa": "5500000",
-      "discountPercentage":10,
+      "discountPercentage": 10,
       "category_id": "65e888c4c7b18ec0788b2b06",
       "category": "smartphones"
     },

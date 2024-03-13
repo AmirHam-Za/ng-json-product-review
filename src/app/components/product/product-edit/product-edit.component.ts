@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '@services/product/product.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-product-edit',
@@ -27,10 +28,22 @@ export class ProductEditComponent {
     })
   }
 
+  updateForm = new FormGroup({
+    title: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.maxLength(10)
+    ])
+  })
+
+  get title() {
+    return this.updateForm.get('title')
+  }
+
   updateProduct(): void {
+    this.product.title = this.title?.value;
     this._productService.updateProductAsync(this.product).subscribe(() => {
       this._router.navigate(['/products']);
-    }
-    );
+    });
   }
 }

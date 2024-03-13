@@ -7,7 +7,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { CurrentPricePipe } from '@pipes/currentPrice.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     ProductRoutingModule,
     RouterModule,
     FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ProductModule { }
